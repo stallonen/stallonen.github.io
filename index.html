@@ -1,6 +1,8 @@
 <html>
    <head>
      <link rel="stylesheet" type="text/css" href="main.css" />
+     <link rel="stylesheet" href="latex2js.css">
+    <script src="latex2html5.bundle.js"></script>
 </head>
 <a href="blog.html">\(\mathbb{B}\text{log}\)</a>  <a href="about.html">\(\mathbb{A}\text{bout me}\)</a>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
@@ -23,9 +25,21 @@
         $$\Large\text{If you can, can you please mail the answer to me.My mail is given at the bottom of the page}$$
         <br>
         <center><p1>Website updates:- This website is now accesible via my own domain</p1></center><br>
-        <center><p1>Website updates:- I am looking to transform this website over to Jekyll and import my wordpress blogs over here, will update soon on progress.</p1></center>
+        <center><p1>Website updates:- I am looking to transform this website over to Jekyll and import my wordpress blogs over here, will update soon on progress.</p1></center><br>
+        <center><p1>Website updates:- I have added latex animations, looking forward to do some more stuff.</p1></center>
         </div>
-
+         <script type="text/latex">
+             <center> 
+\begin{pspicture}(-4,-3)(4,6)
+\uservariable{alpha}(0.1,0){x}
+\psplot[algebraic,linewidth=2pt]{-4}{4}{pow(x,2)}
+\psplot[algebraic,linecolor=blue,linewidth=3]{-4}{4}{4*(x-alpha)*alpha}
+\psline{->}(-4,0)(4,0)
+\end{pspicture}             </center>
+    </script>
+        <script>
+    LaTeX2HTML5.init();
+    </script>
      <footer id="footer">
   <p>Author: Neel Chakraborty.</p>
   <p>Copyright: Neel Chakraborty 2022.</p>
