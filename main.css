@@ -1,6 +1,25 @@
 p1 {
   color: green;
 }
+h1 {
+  color: green;
+  font-size: 128px;
+  line-height: normal;
+}
+h2 {
+  color: green;
+  font-size: 40px;
+}
+a {
+  color: green;
+   margin-right: 20px;
+  font-size: 40px;
+}
+
+body {
+  background-color: white;
+  color:black;
+}
 #page-container {
   position: relative;
   min-height: 100vh;
@@ -16,4 +35,13 @@ p1 {
   bottom: 0;
   width: 100%;
   height: 2.5rem;            /* Footer height */
+}
+.boxed {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+    width: 600px;
+    
+ border: 15px solid green ;
+  border-style: inset;
 }
